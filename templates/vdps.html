@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Detection and Prediction System (VDPS)</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Vehicle Detection and Prediction System (VDPS)</h1>
+        <p>Enhancing Safety on One-Way Mountain Roads</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#demo">Live Demo</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero" id="home">
+        <h2>Revolutionizing Mountain Road Safety</h2>
+        <p>Our cutting-edge system detects vehicles, predicts potential hazards, and provides real-time alerts to enhance road safety on challenging mountain terrain.</p>
+    </div>
+    
+    <div class="container" id="about">
+        <h2 style="text-align: center; margin-bottom: 2rem; color: #1e5799;">About VDPS</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; line-height: 1.6;">
+            The Vehicle Detection and Prediction System (VDPS) is a groundbreaking solution designed specifically for one-way mountain roads. 
+            By leveraging advanced sensors, real-time data processing, and predictive analytics, our system addresses critical safety concerns 
+            in areas where traditional traffic management systems fall short.
+        </p>
+        
+        <div class="features" id="features">
+            <!-- Feature cards can be added here -->
+        </div>
+    </div>
+    
+    <div class="container" id="demo">
+        <div class="demo-section">
+            <h2>Live Demo</h2>
+            <div class="demo-container">
+                <div class="video-container">
+                    <div id="video-placeholder">
+                        Click "Start Detection" to activate the demo
+                    </div>
+                    <video id="video-feed" autoplay muted></video>
+                    <canvas id="canvas-output"></canvas>
+                </div>
+                
+                <div class="detection-results">
+                    <h3>Detection Status</h3>
+                    <div class="detection-status">
+                        <div class="status-card status-inactive" id="status-vehicles">
+                            <h4>Vehicles Detected</h4>
+                            <p id="vehicles-count">0</p>
+                        </div>
+                        <div class="status-card status-inactive" id="status-speed">
+                            <h4>Average Speed</h4>
+                            <p id="average-speed">0 km/h</p>
+                        </div>
+                        <div class="status-card status-inactive" id="status-alert">
+                            <h4>Alert Status</h4>
+                            <p id="alert-status">Inactive</p>
+                        </div>
+                    </div>
+                    
+                    <div class="controls">
+                        <button id="start-detection">Start Detection</button>
+                        <button id="simulate-vehicle" class="secondary" disabled>Simulate Vehicle</button>
+                        <button id="toggle-alert" class="secondary" disabled>Simulate Hazard</button>
+                        <button id="stop-detection" class="danger" disabled>Stop Detection</button>
+                    </div>
+                    
+                    <h3 style="margin-top: 1.5rem;">System Log</h3>
+                    <div class="log-container" id="log-container">
+                        <div class="log-entry">System initialized and ready.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="traffic-light">
+        <div class="light" id="red-light"></div>
+        <div class="light" id="yellow-light"></div>
+        <div class="light" id="green-light"></div>
+    </div>
+    
+    <div class="team-members">
+        <div class="team-member">
+            <h3>Praveen</h3>
+            <p>Project Lead</p>
+        </div>
+        
+        
+        <div class="team-member">
+            <h3>chand</h3>
+            <p>👍</p>
+        </div>
+        
+        <div class="team-member">
+            <h3>Anji</h3>
+            <p>Frontened </p>
+        </div>
+        
+        <div class="team-member">
+            <h3>Teja</h3>
+            <p>Good for nothing[DOCUMENTATION]</p>
+        </div>
+    </div>
+    
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: 323103311059@gvpce.ac.in[PP~team leader]</p>
+                <p>Phone: 101</p>
+                <p>Address: vizag, City of destiny</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vehicle Detection and Prediction System. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="/static/vdps.js"></script>
+</body>
+</html>
